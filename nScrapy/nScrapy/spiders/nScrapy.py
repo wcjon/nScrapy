@@ -7,8 +7,8 @@ import scrapy
 import time
 #from time import sleep
 
-class NeweggSpider(scrapy.Spider):
-	name = 'newegg'
+class nScrapy(scrapy.Spider):
+	name = 'nScrapy'
 	allowed_domains = ['newegg.com']
 	with open("ids.txt", "rt") as f:
 		start_urls = ["https://www.newegg.com/Product/Product.aspx?Item=" + url.strip() for url in f.readlines()]
