@@ -10,8 +10,9 @@ import time
 class nScrapy(scrapy.Spider):
 	name = 'nScrapy'
 	allowed_domains = ['newegg.com']
-	with open("ids.txt", "rt") as f:
-		start_urls = ["https://www.newegg.com/Product/Product.aspx?Item=" + url.strip() for url in f.readlines()]
+#	with open("ids.txt", "rt") as f:
+#		start_urls = ["https://www.newegg.com/Product/Product.aspx?Item=" + url.strip() for url in f.readlines()]
+	start_urls = ["https://www.newegg.com/Product/Product.aspx?Item=050-013N-00001"]
 		
 	def parse(self, response):
 		time.sleep(10)
